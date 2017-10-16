@@ -76,10 +76,90 @@
 		</div>
 
 		<div class="child-box7">
-			<ul>
-				<li></li>
-			</ul>
-		</div>
+<!-- 			<div>
+ -->			<ul>
+					<li v-for="item in kuapin">
+					<router-link to="">
+						<img :src="item.data.imageUrl">
+					</router-link>
+					</li>
+				 </ul>
+				 <ul>
+					<li v-for="item in manjian">
+					<router-link to="">
+						<img :src="item.data.imageUrl">
+					</router-link>
+					</li>
+				 </ul>
+				 <ul>
+					<li v-for="item in danpin">
+					<router-link to="">
+						<img :src="item.data.imageUrl">
+					</router-link>
+					</li>
+				 </ul>
+<!-- 			</div>
+ -->		</div>
+
+ 		<div class="child-box8">
+ 			 <ul>
+ 			 	<li v-for="item in huiyuan">
+ 			 		<img :src="item.data.imageUrl">
+ 			 	</li>
+ 			 	<li v-for="item in baitiao">
+ 			 		<img :src="item.data.imageUrl">
+ 			 	</li>
+<!--  			 	<li v-for="item in vip">
+ 			 		<img :src="item.data.imageUrl">
+ 			 	</li>
+ --> 			 	 <li v-for="item in vip_1">
+ 			 		<img :src="item.data.imageUrl">
+ 			 	</li>
+ 			 	 <li v-for="item in vip_2">
+ 			 		<img :src="item.data.imageUrl">
+ 			 	</li>
+ 			 	 <li v-for="item in zp">
+ 			 		<img :src="item.data.imageUrl">
+ 			 	</li>
+ 			 </ul>
+ 		</div>
+
+ 		<div class="child-box9">
+ 			<div v-for="item in vip" class="child-box9-vi">
+ 				<img :src="item.data.imageUrl">
+ 			</div>
+
+ 			 <div v-for="item in vip_7" class="child-box9-vu">
+ 				<img :src="item.data.imageUrl">
+ 			</div>
+
+ 		</div>
+ 	<div class="child-box10">
+ 			<ul>
+<!--  				<li  v-for="item in zp">
+ 					<img :src="item.data.imageUrl">
+ 				</li>
+ --> 				<li  v-for="item in zy">
+ 					<img :src="item.data.imageUrl">
+ 				</li>
+ 			</ul>
+ 		</div>
+ 		<div class="child-box11">
+ 			 <ul>
+ 				 	<li  v-for="item in zt">
+ 					<img :src="item.data.imageUrl">
+ 				</li>
+
+ 			</ul>
+ 		</div>
+ 		<div class="child-box12">
+ 			 <ul>
+ 				 	<li  v-for="item in ze">
+ 					<img :src="item.data.imageUrl">
+ 				</li>
+
+ 			</ul>
+ 		</div>
 
 </div>
 
@@ -94,14 +174,9 @@ import axios from "axios";
 			name:"child",
 			data:function(){
 				return{
-					Nav:"",
-					list:[],
-					listimg:[],
-					listimgs:[],
-					shafa:[],
-					shafa1:[]
+					Nav:"",list:[],listimg:[],listimgs:[],shafa:[],shafa1:[],kuapin:[],manjian:[],danpin:[],huiyuan:[],baitiao:[],vip:[],vip_1:[],vip_2:[],vip_3:[],zp:[],zy:[],vip_7:[],zt:[]
+
 				}
-				console.log(Nav)
 			},
 				mounted:function () {
 		 var that=this;
@@ -115,7 +190,20 @@ import axios from "axios";
            that.listimgs= response.data[3].result.items[0].block[1].child;
            that.shafa= response.data[3].result.items[1].block[0].child;
            that.shafa1= response.data[3].result.items[2].block[0].child;
-           that.shafa1= response.data[3].result.items[2].block[0].child;
+           that.kuapin= response.data[3].result.items[3].block[0].child;
+           that.manjian= response.data[3].result.items[4].block[0].child;
+           that.danpin= response.data[3].result.items[5].block[0].child;
+           that.huiyuan= response.data[3].result.items[6].block[0].child;
+           that.baitiao= response.data[3].result.items[7].block[0].child;
+           that.vip= response.data[3].result.items[8].block[0].child;
+           that.vip_7= response.data[3].result.items[8].block[1].child;
+           that.vip_1= response.data[3].result.items[9].block[0].child;
+           that.vip_2= response.data[3].result.items[10].block[0].child;
+           // that.vip_3= response.data[3].result.items[10].block[1].child;
+           that.zp= response.data[3].result.items[11].block[0].child;
+           that.zy= response.data[3].result.items[12].block[0].child;
+           that.zt= response.data[3].result.items[13].block[0].child;
+           that.ze= response.data[3].result.items[14].block[0].child;
 
 
           })
@@ -135,7 +223,13 @@ import axios from "axios";
 	width: 100%;
 	}
 	.child-box1-ul{
+		background: #ffffff;
+		width: 100%;
 		height: 43.98px;
+	    position: fixed;
+	   z-index: 99999;
+	   top: 0;
+
 	}
 	.child-box1-ul ul{
 		display: flex;
@@ -177,6 +271,10 @@ import axios from "axios";
 		overflow: hidden;
 
 		}
+
+.child-box1-header{		position: fixed; 	z-index: 99999;
+ top:43.97px; }
+
 .child-box1-header ul li{
 		float: left;
 }
@@ -196,6 +294,7 @@ import axios from "axios";
 }
 .lunbo{
 	height: 150px;
+	margin-top:83.97px; 
 }
 .lunbo img{
 	width: 100%;
@@ -221,5 +320,96 @@ import axios from "axios";
 .child-box6-link{
 	margin-top:-5px; 
 }
+.child-box7 ul{
+	display: flex;
+    margin-top:-5px; 
+
+}
+.child-box7 img{
+	width: 100%; height: 100%;
+}
+.child-box7 ul li{
+	flex: 3;
+	width: 140px;
+}
+.child-box8 ul{
+	display: flex;
+	flex-wrap:wrap; 
+}
+.child-box8 ul img{
+	width: 100%;
+	height: 100%;
+}
+.child-box8 ul li:nth-child(1){
+	height: 130px;
+	width: 120px;
+	flex: 33.3%;
+}
+.child-box8 ul li:nth-child(2){
+	height: 130px;
+	width: 120px;
+	flex: 33.3%;
+}
+
+.child-box8 ul li:nth-child(3){
+	height: 130px;
+	width: 120px;
+	flex: 33.3%;
+}
+.child-box8 ul li:nth-child(4){
+	flex: 100%;
+}.child-box8 ul li:nth-child(5){
+	flex: 100%;
+}
+.child-box8 ul li:nth-child(6){
+	flex: 100%;
+}
+.child-box8 ul li:nth-child(7){
+	flex: 33.3%;
+}
+.child-box8 ul li:nth-child(8){
+	flex: 33.3%;
+}
+.child-box8 ul li:nth-child(9){
+	flex: 33.3%;
+}
+.child-box9 img{
+	width: 100%; height: 100%;
+}
+.child-box9-vi{
+	width: 187.5px;
+	height: 234px;
+	float: left;
+
+}
+.child-box9-vu{
+	float: right;
+	width: 187.5px;
+	height: 117px;
+}
+.child-box10 ul{
+	margin-top:234px; 
+	display: flex;
+	flex-wrap:wrap; 
+
+}
+.child-box10 ul img{
+	width: 100%;
+	height: 100%;
+}
+.child-box10 ul li{
+	flex: 50%;
+	height: 35px;
+}
+
+.child-box11 ul {
+display: flex;
+
+}
+.child-box11 ul li{
+	flex: 3;
+	height: 78px;
+}
+
 </style>
 
