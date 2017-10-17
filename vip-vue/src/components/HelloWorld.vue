@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
-    
+    <child></child>
+    <gx></gx>
   </div>
 </template>
 

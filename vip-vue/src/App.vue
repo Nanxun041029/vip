@@ -1,10 +1,6 @@
 <template>
   <div id="app">
-    <child></child>
-            <ul>
-          <li v-for="item in list">
-          </li>
-        </ul>
+    <daohang></daohang>
     <router-view/>
 
   </div>

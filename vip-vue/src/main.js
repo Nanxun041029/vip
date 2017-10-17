@@ -4,11 +4,19 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import Child from './components/Child'
+import Gx from './components/Gx'
+import Shishang from './components/Shishang'
+import Daohang from './components/Daohang'
+
 Vue.component(Child.name,Child)
+Vue.component(Daohang.name,Daohang)
+Vue.component(Gx.name,Gx)
+Vue.component(Shishang.name,Shishang)
 
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
 Vue.use(MintUI)
+// Vue.use(InfiniteScroll);
 
 Vue.config.productionTip = false
 

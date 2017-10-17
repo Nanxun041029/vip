@@ -9,34 +9,6 @@
 					 		<li><i class="iconfont">&#xe602;</i></li>
 					 </ul>
 				 </div>
-				 <div class="child-box1-header">
-				 		<ul>
-				 			<li><router-link to="" active-class="sp" exact>
-				 				<span>今日推荐</span>
-				 			</router-link></li>
-				 			<li><router-link to="" active-class="sp" exact>
-				 				<span>时尚</span>
-				 			</router-link></li>
-				 			<li><router-link to="" active-class="sp" exact>
-				 				<span>美妆</span>
-				 			</router-link></li>
-				 			<li><router-link to="" active-class="sp" exact>
-				 				<span>居家</span>
-				 		    </router-link></li>
-				 			<li><router-link to="" active-class="sp" exact>
-				 				<span>母婴</span>
-				 			</router-link></li>
-				 			<li><router-link to="" active-class="sp" exact>
-				 				<span>国际</span>
-				 			</router-link></li>
-				 			<li><router-link to="" active-class="sp" exact>
-				 				<span>唯品.奢</span>
-				 			</router-link></li>
-				 			<li><router-link to="" active-class="sp" exact>
-				 				<span>生活</span>
-				 			</router-link></li>
-				 		</ul>
-				 </div>
 			<div class="box2">
  
 			<mt-swipe :auto="4000" class="lunbo">
@@ -174,7 +146,7 @@ import axios from "axios";
 			name:"child",
 			data:function(){
 				return{
-					Nav:"",list:[],listimg:[],listimgs:[],shafa:[],shafa1:[],kuapin:[],manjian:[],danpin:[],huiyuan:[],baitiao:[],vip:[],vip_1:[],vip_2:[],vip_3:[],zp:[],zy:[],vip_7:[],zt:[]
+					Nav:"",list:[],listimg:[],listimgs:[],shafa:[],shafa1:[],kuapin:[],manjian:[],danpin:[],huiyuan:[],baitiao:[],vip:[],vip_1:[],vip_2:[],vip_3:[],zp:[],zy:[],vip_7:[],zt:[],ze:[]
 
 				}
 			},
@@ -265,19 +237,35 @@ import axios from "axios";
 	.child-box1-header{
 		background: #39424a;
 		height: 40px;
+
 	}
 	.child-box1-header ul{
 		height: 35px;
-		overflow: hidden;
+		width: 100%;
+    white-space: nowrap;
+/*    overflow: hidden;
+*/    overflow-x: auto;
+
+
+   }
+    .child-box1-header ul::-webkit-scrollbar{
+    height:0.1rem;
+    width:3rem;
+
 
 		}
 
-.child-box1-header{		position: fixed; 	z-index: 99999;
+.child-box1-header{			
  top:43.97px; }
 
 .child-box1-header ul li{
-		float: left;
-}
+
+	    width:84px;
+   		 /*margin-right: 10px;*/
+   		 display: inline-block;
+/*    overflow-x: auto;
+*//*    height: 4.2133333333rem;
+*/}
 .child-box1-header ul li a{
             border-right:1px solid #4a5259;
      		padding: 6px 20px;
@@ -294,11 +282,17 @@ import axios from "axios";
 }
 .lunbo{
 	height: 150px;
-	margin-top:83.97px; 
-}
+/*	margin-top:10.97px; 
+*/}
 .lunbo img{
 	width: 100%;
 	height: 100%;
+}
+.child-box5-box{
+	height: 84px;
+}
+.child-box5-box1{
+	height: 84px;
 }
 .child-box5 ul{
 	display: flex;
@@ -306,9 +300,11 @@ import axios from "axios";
 }
 .child-box5 ul li{
 	flex:20%;
+
 }
 .child-box5 ul li img{
 		width: 75px;
+		height: 84px;
 
 }
 .child-box6{
