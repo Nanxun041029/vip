@@ -36,6 +36,11 @@ module.exports = {
                     target: 'https://m.vip.com', //需要代理的目标服务器
             　　　　 changeOrigin: true, //开启代理
              　　　　pathRewrite: { '^/server.html': '/server.html' }  //这里重写路径/run就代理到对应地址
+            　　},
+            '/api': {//需要匹配的路径
+                    target: 'http://localhost:3000', //需要代理的目标服务器
+            　　　　 changeOrigin: true, //开启代理
+             　　　　pathRewrite: { '^/api': '/api' }  //这里重写路径/run就代理到对应地址
             　　}
 
     },

@@ -6,7 +6,11 @@
 					 		<li><!-- <img src="../assets/vip-logo.png"> -->唯品会</li>
 					 		<li>辽宁 <i class="iconfont">&#xe6c7;</i></li>
 			<li> <input type="text" name="" value="XK-LL 大牌推荐"> </li>
-					 		<li><i class="iconfont">&#xe602;</i></li>
+					 		<li class="ico"><i class="iconfont">
+					 		<router-link to="/login">
+					 		&#xe602;
+					 	</router-link>
+					 	</i></li>
 					 </ul>
 				 </div>
 				 <div class="child-box1-header">
@@ -20,24 +24,30 @@
 				 			<li><router-link to="/meizhuang" active-class="sp" exact>
 				 				<span>美妆</span>
 				 			</router-link></li>
-				 			<li><router-link to="" active-class="sp" exact>
+				 			<li><router-link to="/jiaju" active-class="sp" exact>
 				 				<span>居家</span>
 				 		    </router-link></li>
-				 			<li><router-link to="" active-class="sp" exact>
+				 			<li><router-link to="muying" active-class="sp" exact>
 				 				<span>母婴</span>
 				 			</router-link></li>
-				 			<li><router-link to="" active-class="sp" exact>
+				 			<li><router-link to="guoji" active-class="sp" exact>
 				 				<span>国际</span>
 				 			</router-link></li>
-				 			<li><router-link to="" active-class="sp" exact>
+				 			<li><router-link to="weipin" active-class="sp" exact>
 				 				<span>唯品.奢</span>
 				 			</router-link></li>
-				 			<li><router-link to="" active-class="sp" exact>
+				 			<li><router-link to="shenghuo" active-class="sp" exact>
 				 				<span>生活</span>
 				 			</router-link></li>
 				 		</ul>
 				 </div>
 	</div>
+		  		<div class="gx-box3">
+	  			<ul>
+	  				<router-link to="/gw"><li><i class="iconfont">&#xf0148;</i></li></router-link>
+	  			</ul>
+	  		</div>
+
 </div>
 </template>
 
@@ -137,4 +147,29 @@
 .sp span{
 		border-bottom: 2px solid #f02387;
 }
+.gx-box3 ul{
+	margin-top: -20px;
+}
+.gx-box3 li{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background: #000;
+	position: fixed;
+	bottom: 40px;
+	left: 15px;
+	z-index: 10;
+
+
+}
+.gx-box3 li i{
+	font-size: 30px;
+	line-height: 50px;
+	color: #fff;
+}
+.ico a{
+	color: #000;
+}
 </style>
+
+

@@ -9,128 +9,84 @@
 					 		<li><i class="iconfont">&#xe602;</i></li>
 					 </ul>
 				 </div>
-			<div class="box2">
- 
-			<mt-swipe :auto="4000" class="lunbo">
-				  <mt-swipe-item v-for="item in list">
-				  			<img :src="item.filename">
-				  </mt-swipe-item>
-				</mt-swipe>
+				 <div class="child-box-99">
+
+				<div class="child-box2">
+						<ul>
+							<li v-for="item in list">
+								<img :src="item.data.imageUrl">
+							</li>
+						</ul>
+				</div>
+				<div class="child-box3">
+						<ul>
+							<li v-for="item in list1">
+								<img :src="item.data.imageUrl">
+							</li>
+						</ul>
+				</div>
+				<div class="child-box4">
+						<ul>
+							<li v-for="item in list2">
+								<img :src="item.data.imageUrl">
+							</li>
+						</ul>
+				</div>
+
+				<div class="child-box5">
+						<ul>
+							<li v-for="item in list3">
+								<img :src="item.data.imageUrl">
+							</li>
+						</ul>
+				</div>
+				<div class="child-box6">
+						<ul>
+							<li v-for="item in list4">
+								<img :src="item.data.imageUrl">
+							</li>
+						</ul>
+				</div>
+				<div class="child-box7">
+						<ul>
+							<li v-for="item in list5">
+								<img :src="item.data.imageUrl">
+							</li>
+						</ul>
+				</div>
+
+				<div class="child-box8">
+						<ul>
+							<li v-for="item in list6">
+								<img :src="item.data.imageUrl">
+							</li>
+						</ul>
+				</div>
+				<div class="child-box9">
+						<ul>
+							<li v-for="item in list7">
+								<img :src="item.data.imageUrl">
+							</li>
+						</ul>
+				</div>
+				<div class="child-box10">
+						<ul>
+							<li v-for="item in list8">
+								<img :src="item.data.imageUrl">
+							</li>
+						</ul>
+				</div>
+				<div class="child-box11">
+						<ul>
+							<li v-for="item in list9">
+								<img :src="item.data.imageUrl">
+							</li>
+						</ul>
+				</div>
 
 
-			</div>
-		</div>
+				</div>
 
-		<div class="child-box5">
-			 <div class="child-box5-box">
-			 	<ul>
-				 	<li v-for="item in listimg">
-				 		<img :src="item.data.imageUrl">
-				 	</li>
-			 	</ul>
-			 </div>
-			 <div class="child-box5-box1">
-			 	<ul>
-				 	<li v-for="item in listimgs">
-				 		<img :src="item.data.imageUrl">
-				 	</li>
-			 	</ul>
-			 </div>		
-		</div>
-
-		<div class="child-box6">
-			<router-link to="" v-for="item in shafa">
-				<img :src="item.data.imageUrl">
-			</router-link>	
-			<router-link to="" v-for="item in shafa1" class="child-box6-link">
-				<img :src="item.data.imageUrl">
-			</router-link>	
-		</div>
-
-		<div class="child-box7">
-<!-- 			<div>
- -->			<ul>
-					<li v-for="item in kuapin">
-					<router-link to="">
-						<img :src="item.data.imageUrl">
-					</router-link>
-					</li>
-				 </ul>
-				 <ul>
-					<li v-for="item in manjian">
-					<router-link to="">
-						<img :src="item.data.imageUrl">
-					</router-link>
-					</li>
-				 </ul>
-				 <ul>
-					<li v-for="item in danpin">
-					<router-link to="">
-						<img :src="item.data.imageUrl">
-					</router-link>
-					</li>
-				 </ul>
-<!-- 			</div>
- -->		</div>
-
- 		<div class="child-box8">
- 			 <ul>
- 			 	<li v-for="item in huiyuan">
- 			 		<img :src="item.data.imageUrl">
- 			 	</li>
- 			 	<li v-for="item in baitiao">
- 			 		<img :src="item.data.imageUrl">
- 			 	</li>
-<!--  			 	<li v-for="item in vip">
- 			 		<img :src="item.data.imageUrl">
- 			 	</li>
- --> 			 	 <li v-for="item in vip_1">
- 			 		<img :src="item.data.imageUrl">
- 			 	</li>
- 			 	 <li v-for="item in vip_2">
- 			 		<img :src="item.data.imageUrl">
- 			 	</li>
- 			 	 <li v-for="item in zp">
- 			 		<img :src="item.data.imageUrl">
- 			 	</li>
- 			 </ul>
- 		</div>
-
- 		<div class="child-box9">
- 			<div v-for="item in vip" class="child-box9-vi">
- 				<img :src="item.data.imageUrl">
- 			</div>
-
- 			 <div v-for="item in vip_7" class="child-box9-vu">
- 				<img :src="item.data.imageUrl">
- 			</div>
-
- 		</div>
- 	<div class="child-box10">
- 			<ul>
-<!--  				<li  v-for="item in zp">
- 					<img :src="item.data.imageUrl">
- 				</li>
- --> 				<li  v-for="item in zy">
- 					<img :src="item.data.imageUrl">
- 				</li>
- 			</ul>
- 		</div>
- 		<div class="child-box11">
- 			 <ul>
- 				 	<li  v-for="item in zt">
- 					<img :src="item.data.imageUrl">
- 				</li>
-
- 			</ul>
- 		</div>
- 		<div class="child-box12">
- 			 <ul>
- 				 	<li  v-for="item in ze">
- 					<img :src="item.data.imageUrl">
- 				</li>
-
- 			</ul>
  		</div>
 
 </div>
@@ -146,36 +102,28 @@ import axios from "axios";
 			name:"child",
 			data:function(){
 				return{
-					Nav:"",list:[],listimg:[],listimgs:[],shafa:[],shafa1:[],kuapin:[],manjian:[],danpin:[],huiyuan:[],baitiao:[],vip:[],vip_1:[],vip_2:[],vip_3:[],zp:[],zy:[],vip_7:[],zt:[],ze:[]
-
+					list:[],list1:[],list2:[],list3:[],list4:[],list5:[],list6:[],list7:[],
+					list8:[],list9:[],list10:[]
 				}
 			},
 				mounted:function () {
 		 var that=this;
-         axios.post('/server.html?rpc&method=pageCache&f=&_=1507967221756',[{"method":"getWeixinFollow","params":{"page":"index.html","query":"jump_https=1"},"hash":"34db7fef","id":1507947384086,"jsonrpc":"2.0"},{"method":"getAppDownload","params":{"page":"index.html","query":"jump_https=1"},"hash":"bbc8b261","id":1507947384087,"jsonrpc":"2.0"},{"method":"getNav","params":{"page":"index.html","query":"jump_https=1"},"hash":"5c625483","id":1507947384088,"jsonrpc":"2.0"},{"method":"getMenu","params":{"page":"index.html","query":"jump_https=1"},"hash":"f06ea821","id":1507947384089,"jsonrpc":"2.0"},{"method":"getAd","params":{"page":"index.html","query":"jump_https=1"},"hash":"8103fa41","id":1507947384090,"jsonrpc":"2.0"},{"method":"getOperate","params":{"page":"index.html","query":"jump_https=1"},"hash":"9ac9723b","id":1507947384091,"jsonrpc":"2.0"},{"method":"getBrandList","params":{"page":"index.html","query":"jump_https=1","ep":20,"np":1},"hash":"95a72e53","id":1507947384092,"jsonrpc":"2.0"},{"method":"getFullAdAppDownload","params":{"page":"index.html","query":"jump_https=1"},"hash":"a93a32d8","id":1507947384093,"jsonrpc":"2.0"},{"method":"getPopupAd","params":{"page":"index.html","query":"jump_https=1"},"hash":"7d658758","id":1507947384094,"jsonrpc":"2.0"},{"method":"getRecommendAddress","params":{"page":"index.html","query":"jump_https=1"},"hash":"4018a5b6","id":1507947384095,"jsonrpc":"2.0"},{"method":"getFooterToolbar","params":{"page":"index.html","query":"jump_https=1"},"hash":"3d51d573","id":1507947384096,"jsonrpc":"2.0"},{"method":"getFooter","params":{"page":"index.html","query":"jump_https=1"},"hash":"2683af8b","id":1507947384097,"jsonrpc":"2.0"},{"method":"getVTM","params":{"page":"index.html","query":"jump_https=1"},"hash":"85a23afe","id":1507947384098,"jsonrpc":"2.0"},{"method":"getWxShare","params":{"page":"index.html","query":"jump_https=1"},"hash":"cb9a6f92","id":1507947384099,"jsonrpc":"2.0"},{"method":"IndexRpc.getFavoriteTips","params":{"page":"index.html","query":"jump_https=1"},"hash":"beca76d8","id":1507947384100,"jsonrpc":"2.0"},{"method":"getAppWakeup","params":{"page":"index.html","query":"jump_https=1"},"hash":"12583b30","id":1507947384101,"jsonrpc":"2.0"}])
+
+         axios.post('/server.html?rpc&method=pageCache&f=&_=1508458256710',[{"method":"getWeixinFollow","params":{"page":"index.html","query":"jump_https=1"},"hash":"34db7fef","id":1508458262757,"jsonrpc":"2.0"},{"method":"getAppDownload","params":{"page":"index.html","query":"jump_https=1"},"hash":"7cbf69f5","id":1508458262758,"jsonrpc":"2.0"},{"method":"getNav","params":{"page":"index.html","query":"jump_https=1"},"hash":"f62c53ed","id":1508458262759,"jsonrpc":"2.0"},{"method":"getMenu","params":{"page":"index.html","query":"jump_https=1"},"hash":"42897d21","id":1508458262760,"jsonrpc":"2.0"},{"method":"getAd","params":{"page":"index.html","query":"jump_https=1"},"hash":"d25531f3","id":1508458262761,"jsonrpc":"2.0"},{"method":"getOperate","params":{"page":"index.html","query":"jump_https=1"},"hash":"238d31a8","id":1508458262762,"jsonrpc":"2.0"},{"method":"getBrandList","params":{"page":"index.html","query":"jump_https=1","ep":20,"np":1},"hash":"c7531326","id":1508458262763,"jsonrpc":"2.0"},{"method":"getFullAdAppDownload","params":{"page":"index.html","query":"jump_https=1"},"hash":"a93a32d8","id":1508458262764,"jsonrpc":"2.0"},{"method":"getPopupAd","params":{"page":"index.html","query":"jump_https=1"},"hash":"7d658758","id":1508458262765,"jsonrpc":"2.0"},{"method":"getRecommendAddress","params":{"page":"index.html","query":"jump_https=1"},"hash":"4018a5b6","id":1508458262766,"jsonrpc":"2.0"},{"method":"getFooterToolbar","params":{"page":"index.html","query":"jump_https=1"},"hash":"3d51d573","id":1508458262767,"jsonrpc":"2.0"},{"method":"getFooter","params":{"page":"index.html","query":"jump_https=1"},"hash":"2683af8b","id":1508458262768,"jsonrpc":"2.0"},{"method":"getVTM","params":{"page":"index.html","query":"jump_https=1"},"hash":"85a23afe","id":1508458262769,"jsonrpc":"2.0"},{"method":"getWxShare","params":{"page":"index.html","query":"jump_https=1"},"hash":"cb9a6f92","id":1508458262770,"jsonrpc":"2.0"},{"method":"IndexRpc.getFavoriteTips","params":{"page":"index.html","query":"jump_https=1"},"hash":"edd6c982","id":1508458262771,"jsonrpc":"2.0"},{"method":"getAppWakeup","params":{"page":"index.html","query":"jump_https=1"},"hash":"aad1388a","id":1508458262772,"jsonrpc":"2.0"}])
           .then(function(response){
             console.log(response);
 
-           that.Nav= response.data[1].result.searchTips.show_word;
-           that.list= response.data[2].result.items.topAds;
-           that.listimg= response.data[3].result.items[0].block[0].child;
-           that.listimgs= response.data[3].result.items[0].block[1].child;
-           that.shafa= response.data[3].result.items[1].block[0].child;
-           that.shafa1= response.data[3].result.items[2].block[0].child;
-           that.kuapin= response.data[3].result.items[3].block[0].child;
-           that.manjian= response.data[3].result.items[4].block[0].child;
-           that.danpin= response.data[3].result.items[5].block[0].child;
-           that.huiyuan= response.data[3].result.items[6].block[0].child;
-           that.baitiao= response.data[3].result.items[7].block[0].child;
-           that.vip= response.data[3].result.items[8].block[0].child;
-           that.vip_7= response.data[3].result.items[8].block[1].child;
-           that.vip_1= response.data[3].result.items[9].block[0].child;
-           that.vip_2= response.data[3].result.items[10].block[0].child;
-           // that.vip_3= response.data[3].result.items[10].block[1].child;
-           that.zp= response.data[3].result.items[11].block[0].child;
-           that.zy= response.data[3].result.items[12].block[0].child;
-           that.zt= response.data[3].result.items[13].block[0].child;
-           that.ze= response.data[3].result.items[14].block[0].child;
+           that.list= response.data[1].result.items[0].block[0].child;
+           that.list1= response.data[1].result.items[1].block[0].child;
+           that.list2= response.data[1].result.items[2].block[0].child;
+           that.list3= response.data[1].result.items[3].block[0].child;
+           that.list4= response.data[1].result.items[3].block[1].child;
+           that.list5= response.data[1].result.items[4].block[0].child;
+           that.list6= response.data[1].result.items[5].block[0].child;
+           that.list7= response.data[1].result.items[6].block[0].child;
+           that.list8= response.data[1].result.items[7].block[0].child;
+           that.list9= response.data[1].result.items[8].block[0].child;
+   
 
 
           })
@@ -288,124 +236,18 @@ import axios from "axios";
 	width: 100%;
 	height: 100%;
 }
-.child-box5-box{
-	height: 84px;
-}
-.child-box5-box1{
-	height: 84px;
-}
-.child-box5 ul{
+.child-box-99 ul{
 	display: flex;
- 
+	flex-wrap: wrap;
 }
-.child-box5 ul li{
-	flex:20%;
-
-}
-.child-box5 ul li img{
-		width: 75px;
-		height: 84px;
-
-}
-.child-box6{
-}
-.child-box6 img{
-	width: 100%;
-	height: 100%;
-}
-.child-box6-link{
-	margin-top:-5px; 
-}
-.child-box7 ul{
-	display: flex;
-    margin-top:-5px; 
-
-}
-.child-box7 img{
-	width: 100%; height: 100%;
-}
-.child-box7 ul li{
+.child-box5 li{
+	flex: 5;
+}.child-box6 li{
+	flex: 5;
+}.child-box9 li{
+	flex: 2;
+}.child-box10 li{
 	flex: 3;
-	width: 140px;
 }
-.child-box8 ul{
-	display: flex;
-	flex-wrap:wrap; 
-}
-.child-box8 ul img{
-	width: 100%;
-	height: 100%;
-}
-.child-box8 ul li:nth-child(1){
-	height: 130px;
-	width: 120px;
-	flex: 33.3%;
-}
-.child-box8 ul li:nth-child(2){
-	height: 130px;
-	width: 120px;
-	flex: 33.3%;
-}
-
-.child-box8 ul li:nth-child(3){
-	height: 130px;
-	width: 120px;
-	flex: 33.3%;
-}
-.child-box8 ul li:nth-child(4){
-	flex: 100%;
-}.child-box8 ul li:nth-child(5){
-	flex: 100%;
-}
-.child-box8 ul li:nth-child(6){
-	flex: 100%;
-}
-.child-box8 ul li:nth-child(7){
-	flex: 33.3%;
-}
-.child-box8 ul li:nth-child(8){
-	flex: 33.3%;
-}
-.child-box8 ul li:nth-child(9){
-	flex: 33.3%;
-}
-.child-box9 img{
-	width: 100%; height: 100%;
-}
-.child-box9-vi{
-	width: 187.5px;
-	height: 234px;
-	float: left;
-
-}
-.child-box9-vu{
-	float: right;
-	width: 187.5px;
-	height: 117px;
-}
-.child-box10 ul{
-	margin-top:234px; 
-	display: flex;
-	flex-wrap:wrap; 
-
-}
-.child-box10 ul img{
-	width: 100%;
-	height: 100%;
-}
-.child-box10 ul li{
-	flex: 50%;
-	height: 35px;
-}
-
-.child-box11 ul {
-display: flex;
-
-}
-.child-box11 ul li{
-	flex: 3;
-	height: 78px;
-}
-
 </style>
 
